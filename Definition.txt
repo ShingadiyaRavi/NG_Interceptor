@@ -1,0 +1,20 @@
+Task - 13
+Interceptor :
+	
+	This is used for the get data from the api and manage the response and if authentic user can get data otherwise not.
+
+	it means it is a middlware between request and response.
+	
+	it is always run when we used http requests.
+
+	if we have more than one Interceptor then we check all Interceptor is without error because of any Interceptor generate the error then all Interceptor not work.
+
+	create using :
+		cmd : ng generate interceptor interceptorName
+	
+	so care about that...
+
+	How to work :
+	request send to server but first request go in Interceptor and it will give to server
+	then server give response but that response come in the Interceptor
+	then Interceptor give a response to request....
